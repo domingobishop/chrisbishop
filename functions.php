@@ -12,16 +12,6 @@ function bc_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'bc_styles' );
 
-function bc_scripts() {
-    wp_register_script( 'jquery-js', 'https://code.jquery.com/jquery-2.2.4.min.js', array(), '2.2.4' );
-    wp_register_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array(), '3.3.7', true );
-    wp_register_script( 'global-js', get_template_directory_uri() . '/js/bc.js', array(), '1.0', true );
-    wp_enqueue_script( 'jquery-js' );
-    wp_enqueue_script( 'bootstrap-js' );
-    wp_enqueue_script( 'global-js' );
-}
-add_action( 'wp_enqueue_scripts', 'bc_scripts' );
-
 add_action( 'after_setup_theme', 'register_my_menu' );
 function register_my_menu() {
   register_nav_menu( 'primary', __( 'Navigation Menu', 'blankcanvas' ) );
@@ -65,14 +55,3 @@ function add_image_responsive_class($content) {
 }
 add_filter('the_content', 'add_image_responsive_class');
 
-function excerpt($limit) {
-    $excerpt = explode(' ', get_the_excerpt(), $limit);
-    if (count($excerpt)>=$limit) {
-        array_pop($excerpt);
-        $excerpt = implode(" ",$excerpt).'...';
-    } else {
-        $excerpt = implode(" ",$excerpt);
-    }
-    $excerpt = preg_replace('`[[^]]*]`','',$excerpt);
-    return $excerpt;
-}
