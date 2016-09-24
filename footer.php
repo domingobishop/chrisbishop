@@ -1,10 +1,8 @@
-<footer id="footer" class="bc-footer">
+<footer id="footer">
   <div class="container">
     <div class="row">
-      <div class="col-md-8 col-lg-offset-2 text-center bc-info">
-        <p><small>Copyright © <?php echo date("Y"); ?> <br>
-           Blank Canvas with Bootstrap <br>
-          Theme by <a href="http://chrisbishop.me.uk/" target="_blank">Chris Bishop</a></small></p>
+      <div class="col-md-12 text-center">
+        <p><small><?php echo date("Y"); ?></small></p>
       </div>
     </div>
   </div>
