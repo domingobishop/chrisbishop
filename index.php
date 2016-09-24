@@ -6,11 +6,12 @@
                 <div class="col-md-12">
                     <div id="content" class="text-center">
                         <p>
-                        <a href="http://chrisbishop.me.uk/my-blog/" class="btn btn-default" role="button">My blog</a>
-                        <a href="https://twitter.com/thebishochannel" class="btn btn-default" role="button">My twitter</a>
-                        <a href="https://uk.linkedin.com/in/christopherdomingo" class="btn btn-default" role="button">My linkedin</a>
-                        <a href="https://github.com/domingobishop" class="btn btn-default" role="button">My github</a>
-                        <a href="https://vimeo.com/mashuprealities" class="btn btn-default" role="button">My vimeo</a>
+                        <a href="http://chrisbishop.me.uk/my-blog/" target="_blank" class="btn btn-default" role="button">My blog</a>
+                        <a href="https://twitter.com/thebishochannel" target="_blank" class="btn btn-default" role="button">My twitter</a>
+                        <a href="https://uk.linkedin.com/in/christopherdomingo" target="_blank" class="btn btn-default" role="button">My linkedin</a>
+                        <a href="https://github.com/domingobishop" target="_blank" class="btn btn-default" role="button">My github</a>
+                        <a href="https://vimeo.com/mashuprealities" target="_blank" class="btn btn-default" role="button">My vimeo</a>
+                        <a href="https://www.flickr.com/photos/87939387@N06/" target="_blank" class="btn btn-default" role="button">My flickr</a>
                         </p>
                     </div><!-- #content -->
                 </div>
