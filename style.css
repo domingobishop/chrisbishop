@@ -29,6 +29,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     color: #000;
 }
+h1 {
+	font-size: 3.6em;
+}
+p {
+	margin-bottom: 1.6em;
+}
 a {
 	color: #000;
 }
@@ -54,15 +60,28 @@ body {
     background: url('img/bg.jpg') #e4eaea center center no-repeat;
     background-size: cover;
     height: 100%;
+	position: relative;
+}
+body:before {
+	content: "";
+	position: absolute;
+	left: 0; right: 0;
+	top: 0; bottom: 0;
+	background: rgba(0,0,0,.3);
 }
 header {
     padding: 2em 0;
 }
-main {
-    padding: 3em 0;
-}
 h1, h2, h3, h4, p, ul, li, ol, dl, blockquote {
     color: #fff;
+}
+.btn-default {
+	color: #fff;
+	background-color: transparent;
+	padding: 1em 1.6em;
+	border: 5px solid #ccc;
+	border-radius: 9px;
+	margin-bottom: 0.4em;
 }
 
 /**
@@ -76,8 +95,5 @@ footer {
 footer ul {
 	list-style-type: none;
 	padding: 0;
-}
-footer .bc-info {
-	padding: 1em;
 }
 
