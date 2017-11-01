@@ -6,9 +6,15 @@ function bc_styles() {
     wp_register_style( 'bc-styles', get_template_directory_uri() . '/style.css', array(), 1.0, 'all' );
     wp_register_style( 'google-fonts',
         'https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic', array(), 1.0, 'all' );
+    wp_register_style( 'font-awesome-css',
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', array(), 1.0, 'all' );
+    wp_register_style( 'font-awesome',
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg', array(), 1.0, 'all' );
     wp_enqueue_style( 'bootstrap' );
     wp_enqueue_style( 'bc-styles' );
     wp_enqueue_style( 'google-fonts' );
+    wp_enqueue_style( 'font-awesome' );
+    wp_enqueue_style( 'font-awesome-css' );
 }
 add_action( 'wp_enqueue_scripts', 'bc_styles' );
 

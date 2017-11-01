@@ -48,6 +48,13 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote {
 	hyphens: none;
 	word-break: keep-all;
 }
+.my-links {
+	text-align: center;
+}
+.fa {
+	color: #fff;
+	padding: 0.3em;
+}
 
 /**
  * Page
@@ -67,7 +74,7 @@ body:before {
 	position: absolute;
 	left: 0; right: 0;
 	top: 0; bottom: 0;
-	background: rgba(0,0,0,.3);
+	background: rgba(0,0,0,.6);
 }
 header {
     padding: 2em 0;
